@@ -1,6 +1,6 @@
 import { useState } from "react";
 import io from "socket.io-client";
-import Chat from "./components/Chat";
+import Chat from "./components/chat-window/Chat";
 import {
   Text,
   Container,
@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
+// client side connect to server port 3001
 const socket = io.connect("http://localhost:3001");
 
 const boxStyles = {
