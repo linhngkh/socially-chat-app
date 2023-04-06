@@ -66,10 +66,12 @@ const Chat = ({ socket, username, room }) => {
                 <Box>
                   <Text>{messageContent.message}</Text>
                 </Box>
-                <Box>
-                  <Text>{messageContent.author}</Text>
+                <Flex>
+                  <Text mr={3} fontWeight="bold">
+                    {messageContent.author}
+                  </Text>
                   <Text>{messageContent.time}</Text>
-                </Box>
+                </Flex>
               </Container>
             );
           })}
@@ -83,6 +85,7 @@ const Chat = ({ socket, username, room }) => {
             type="text"
             placeholder="Hey..."
             onChange={(e) => setCurrentMessage(e.target.value)}
+            onKeyPress={(e) => e.key === "Enter" && sendMessage()}
           />
           <Button
             onClick={sendMessage}
