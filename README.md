@@ -8,6 +8,8 @@
         * useState
         * useEffect
         * useRef
+        
+* Socket.io-client
 * HTML
 * CSS 
      * Chakra UI
