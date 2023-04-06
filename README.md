@@ -38,7 +38,8 @@
 ### How to get the app locally
 ------
 * ```git clone https://github.com/linhngkh/socially-chat-app.git```
-* ```yarn```
+* ```yarn``` for client folder
+* ```npm install ``` for server folder
 
 #### Commands:
 * to run locally:
